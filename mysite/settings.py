@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 #staticfiles
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
-#STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 STATICFILES_DIRS = [STATIC_DIR, ]
 
@@ -160,4 +160,4 @@ EMAIL_HOST = config('EMAIL_HOST')  # Eg. smtp.gmail.com
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # Eg. user@domain.com
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = config('EMAIL_PORT', cast=int)
-DEFAULT_FROM_EMAIL = "TodoApp"
+DEFAULT_FROM_EMAIL = "GeoCodingApp"

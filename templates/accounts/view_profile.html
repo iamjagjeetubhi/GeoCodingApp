@@ -144,10 +144,12 @@ Setting
 
 </div>
  {% if not upload_form.errors %}
+{% if request.user.upload %}
 <div class="alert alert-warning text-center">
 <strong><a href={{ request.user.upload.url }}>
 Click to Download last converted file</a></strong>
 </div>
+{% endif %}
 {% endif %}
 </div>
 </div>
